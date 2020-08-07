@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lemonada', cursive;
+        }
+        #container{
+            border: 3px solid black;
+            width: 1200px;
+            margin: 0px auto;
+            margin-top: 20px;
+            padding: 15px;
+        }
+        nav{
+            width: 100%;
+            height: 15vh;
+            display: flex; justify-content: space-between; align-items: center;
+            background: grey;
+            color: white;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+        }
+        nav .menu{
+            width: 100%;
+            display: flex; justify-content: space-around;
+        }
+        nav .menu a{
+            width: 34%;text-decoration: none;
+            padding: 10px; text-align: center;
+        }
+        nav .menu a:hover{
+            background-color: lightseagreen;
+            transition: 0.5s;
+            border-radius: 100px; border: solid; border-color: black;
+        }
+        #banner{
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+            border: 2px solid black;
+            display: flex;
+            font-size: 50px;
+            margin-bottom: 15px;
+            background-image: url(7.jpg);
+            background-size: cover;
+            background-position: center;    
+        }
+        #team{
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .section-1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .team1{
+            float: left;
+            display: flex;
+            justify-content: center;
+        }
+        .section-1 .team1 img{
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: 35px;
+        }
+        #section-2:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #ab{
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #left-side{
+            width: 58%;
+            height: 660px;
+            float: left;
+            border-radius: 15px;
+            border: 2px solid black;
+            background-color: darkseagreen;
+            text-align: justify;
+        }
+        #right-side{
+            width: 40%;
+            height: 660px;
+            float: right;
+        }
+        #project1{
+            width: 100%;
+            height: 210px;
+            background-image: url(p1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project2{
+            width: 100%;
+            height: 210px;
+            background-image: url(p2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project3{
+            width: 100%;
+            height: 209px;
+            background-image: url(p3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .section-3:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #tech{ margin-top: 20px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .column {
+            background-color: lightgrey;
+            border: 15px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            float: left;
+            width: 17%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p{
+            text-align: center;
+        }
+        p a{
+                text-decoration: none; padding: 5px; color: #1c1c1bff;
+                font-size: large; border: solid; border-radius: 10px;
+                background-color: #ffe4e1; border-color: black;
+        }
+        a:hover{
+                background-color: darkseagreen; border: solid;
+                border-color: black; border-radius: 0px; transition: 1s;
+        }
+        .row .column .pics img{
+            width: 98%;
+            height: 150px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        #cnt{ margin-top: 20px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #footer{
+            width: 100%;
+            height: 150px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="background-color:blanchedalmond;">
+    <div id="container">
+        <div id="header">
+            <nav>
+                <div class="menu">
+                    <a href="practical7.html" style="color: white"><b>HOME</b></a>
+                    <a href="#team" style="color: white"><b>TEAM</b></a>
+                    <a href="#ab" style="color: white;"><b>ABOUT US</b></a>
+                    <a href="#tech" style="color: white"><b>TECHNOLOGIES USED</b></a>
+                    <a href="#footer" style="color: white"><b>CONTACT-@</b></a>
+                </div>
+            </nav>
+        </div>
+        <div id="banner" style="color: black;">PRACTICAL -7</div>
+        <div id="team">TEAM-MEMBERS</div>
+        <div class="section-1">
+            <div class="team1"><img src="a1.jpg" alt="">
+            </div>
+            <div class="team1"><img src="a2.jpg" alt="">
+            </div>
+            <div class="team1"><img src="a3.jpg" alt="">
+            </div>
+            <div class="team1"><img src="a4.jpg" alt="">
+            </div>
+        </div>
+        <div id="section-2">
+            <div id="ab">ABOUT-US</div><br>
+            <div id="left-side">
+                <h2 style="text-align: center;">ABOUT PROJECTS:</h2><br>
+                A project is an activity to meet the creation of a unique product or service and thus activities that are undertaken to accomplish routine activities cannot be considered projects. For instance, if your project is less than three months old and has fewer than 20 people working on it, you may not be working in what is called a project according to the definition of the term.<br>
+                It has to be remembered that the term temporary does not apply to the result or service that is generated by the project. The project may be finite but not the result. For instance, a project to build a monument would be of fixed duration whereas the result that is the monument may be for an indefinite period in time.
+            </div>
+            <div id="right-side">
+                <div id="project1">PROJECT-1</div>
+                <div id="project2">PROJECT-2</div>
+                <div id="project3">PROJECT-3</div>
+            </div>
+        </div>
+        <div id="tech">TECHNOLOGIES USED</div>
+        <div class="row">
+            <div class="column">
+                <div class="pics">
+                    <img src="h.jpg" alt="">
+                </div>
+                <h4>INTRO TO HTML</h4><br>
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+                <p><a href="abouthtml.html" target="_blank">READ MORE</a></p><br>
+            </div>
+            <div class="column">
+                <div class="pics">
+                    <img src="c.png" alt="">
+                </div>
+                <h4>INTRO TO CSS</h4><br>
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+                <p><a href="aboutcss.html" target="_blank">READ MORE</a></p><br>
+            </div>
+            <div class="column">
+                <div class="pics">
+                    <img src="j.jpg" alt="">
+                </div>
+                <h4>INTRO TO JS</h4><br>
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+                <p><a href="aboutjs.html" target="_blank">READ MORE</a></p><br>
+            </div>
+            <div class="column">
+                <div class="pics">
+                    <img src="b.jpg" alt="">
+                </div>
+                <h4>INTRO TO BOOTSTRAP</h4><br>
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+                <p><a href="aboutbootstrap.html" target="_blank">READ MORE</a></p><br>
+            </div>
+        </div>
+        <div id="cnt">CONTACT-US</div>
+        <div id="footer">MOB-NO:- 9759304175<br>
+            EMAIL-ID:- chirag5april@gmail.com<br>
+            INSTAGRAM:- chirag_in_real_life
+        </div><br>
+    </div>
+    <br>
+</body>
+</html>

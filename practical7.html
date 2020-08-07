@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lemonada', cursive;
+        }
+        #container{
+            border: 3px solid black;
+            width: 1200px;
+            margin: 0px auto;
+            margin-top: 20px;
+            padding: 15px;
+        }
+        #header{
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+            color: white;
+            font-size: 30px;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #banner{
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            margin-bottom: 15px;
+            background-color: darkseagreen;
+        }
+        #team{
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .section-1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .team1{
+            float: left;
+            display: flex;
+            justify-content: center;
+        }
+        .section-1 .team1 img{
+            background-color: darkgoldenrod;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            margin: 35px;
+        }
+        #section-2:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #ab{
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #left-side{
+            width: 58%;
+            height: 660px;
+            float: left;
+            border-radius: 15px;
+            font-size: 50px;
+            border: 2px solid black;
+            background-color: darkseagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #right-side{
+            width: 40%;
+            height: 660px;
+            float: right;
+        }
+        #project1{
+            width: 100%;
+            height: 210px;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: rgba(255,0,0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        #project2{
+            width: 100%;
+            height: 210px;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: rgba(255,0,0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        #project3{
+            width: 100%;
+            height: 209px;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: rgba(255,0,0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-3:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #tech{ margin-top: 20px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .column {
+            background-color: lightgrey;
+            border: 15px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            float: left;
+            width: 17%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p{
+            text-align: center;
+        }
+        #cnt{ margin-top: 20px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #footer{
+            width: 100%;
+            height: 100px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            font-size: 30px;
+            border: 2px solid black;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="background-color:blanchedalmond;">
+    <div id="container">
+        <div id="header">HEADER
+        </div>
+        <div id="banner" style="color: black;">BANNER</div>
+        <div id="team">SECTION-1</div>
+        <div class="section-1">
+            <div class="team1"><img src="" alt="">
+            </div>
+            <div class="team1"><img src="" alt="">
+            </div>
+            <div class="team1"><img src="" alt="">
+            </div>
+            <div class="team1"><img src="" alt="">
+            </div>
+        </div>
+        <div id="section-2">
+            <div id="ab">SECTION-2</div><br>
+            <div id="left-side">MAIN CONTENT
+            </div>
+            <div id="right-side">
+                <div id="project1">PROJECT-1</div>
+                <div id="project2">PROJECT-2</div>
+                <div id="project3">PROJECT-3</div>
+            </div>
+        </div>
+        <div id="tech">SECTION-3</div>
+        <div class="row">
+            <div class="column">
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+            </div>
+            <div class="column">
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+            </div>
+            <div class="column">
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+            </div>
+            <div class="column">
+                <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi perferendis consequatur mollitia!</i><br><br>
+            </div>
+        </div>
+        <div id="cnt">SECTION-4</div>
+        <div id="footer">FOOTER
+        </div><br>
+    </div>
+    <br>
+</body>
+</html>
