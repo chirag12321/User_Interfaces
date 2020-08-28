@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practical9</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    @media (min-width: 1201px){
+    body{
+        background-color: rgb(200, 99, 71);
+    }
+    html{
+        scroll-padding-top: 100px;
+        scroll-behavior: smooth;
+    }
+    nav{
+        display: flex;
+        height: 90px;
+        width: 100%;
+        background: grey;
+        border-radius: 15px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid black;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    nav ul li{
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+    nav ul li a.active,nav ul li a:hover{
+        color: #111;
+        background: darkseagreen;
+    }
+    nav .menu-btn i{
+        color: black;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    #banner{
+        width: 100%;
+        height: 500px;
+        margin-top: 100px;
+        border: 3px solid black;
+        color: black;
+        display: flex;
+        font-size: 60px;
+        font-weight: normal;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        background-image: url(7.jpg);
+        background-size: cover;
+        background-position: center;    
+        }
+        #team{
+            font-size: 60px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        .section-1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .team1{
+            display: inline-block;
+        }
+        .section-1 .team1 img{
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 240px;
+            height: 240px;
+            margin: 40px;
+        }
+        #section-2:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #ab{
+            font-size: 60px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        #left-side{
+            width: 58%;
+            height: 660px;
+            float: left;
+            border-radius: 15px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: darkseagreen;
+            text-align: justify;
+        }
+        #right-side{
+            width: 40%;
+            height: 660px;
+            float: right;
+        }
+        #project1{
+            width: 100%;
+            height: 210px;
+            background-image: url(p1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 30px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project2{
+            width: 100%;
+            height: 210px;
+            background-image: url(p2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 30px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project3{
+            width: 100%;
+            height: 209px;
+            background-image: url(p3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 30px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .section-3:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #tech{ margin-top: 20px;
+            font-size: 60px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .column {
+            background-color: lightgrey;
+            border: 15px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 2.4%;
+            float: left;
+            width: 20%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p{
+            text-align: center;
+        }
+        p a{
+            text-decoration: none; padding: 5px; color: #1c1c1bff;
+            font-size: large; border: solid; border-radius: 10px;
+            background-color: #ffe4e1; border-color: black;
+        }
+        a:hover{
+            background-color: darkseagreen; border: solid;
+            border-color: black; border-radius: 0px; transition: 1s;
+        }
+        .row .column .pics img{
+            width: 99%;
+            height: 150px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        #cnt{ margin-top: 20px;
+            font-size: 60px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        #footer{
+            width: 100%;
+            height: 150px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (min-width: 850px) and (max-width:1200px)
+    {
+        body{
+        background-color: rgb(200, 99, 71);
+    }
+    html{
+        scroll-padding-top: 100px;
+        scroll-behavior: smooth;
+    }
+    nav{
+        display: flex;
+        height: 90px;
+        width: 100%;
+        background: grey;
+        border-radius: 15px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid black;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    nav ul li{
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+    nav ul li a.active,nav ul li a:hover{
+        color: #111;
+        background: darkseagreen;
+    }
+    nav .menu-btn i{
+        color: black;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    #banner{
+        width: 100%;
+        height: 500px;
+        margin-top: 100px;
+        border: 3px solid black;
+        color: black;
+        display: flex;
+        font-size: 40px;
+        font-weight: normal;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        background-image: url(7.jpg);
+        background-size: cover;
+        background-position: center;    
+        }
+    #team{
+        font-size: 50px;
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+    }
+        .section-1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .team1{
+            display: inline-block;
+        }
+        .section-1 .team1 img{
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+        }
+        #section-2:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #ab{
+            font-size: 50px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        #left-side{
+            width: 58%;
+            height: 660px;
+            float: left;
+            border-radius: 15px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: darkseagreen;
+            text-align: justify;
+        }
+        #right-side{
+            width: 40%;
+            height: 660px;
+            float: right;
+        }
+        #project1{
+            width: 100%;
+            height: 210px;
+            background-image: url(p1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project2{
+            width: 100%;
+            height: 210px;
+            background-image: url(p2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project3{
+            width: 100%;
+            height: 209px;
+            background-image: url(p3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .section-3:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #tech{ margin-top: 20px;
+            font-size: 50px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .column {
+            background-color: lightgrey;
+            border: 15px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 2.4%;
+            float: left;
+            width: 45%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p{
+            text-align: center;
+        }
+        p a{
+            text-decoration: none; padding: 5px; color: #1c1c1bff;
+            font-size: large; border: solid; border-radius: 10px;
+            background-color: #ffe4e1; border-color: black;
+        }
+        a:hover{
+            background-color: darkseagreen; border: solid;
+            border-color: black; border-radius: 0px; transition: 1s;
+        }
+        .row .column .pics img{
+            width: 99%;
+            height: 150px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        #cnt{ margin-top: 20px;
+            font-size: 50px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        #footer{
+            width: 100%;
+            height: 150px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media (min-width: 360px) and (max-width:849px)
+    {
+        body{
+        background-color: rgb(200, 99, 71);
+    }
+    html{
+        scroll-padding-top: 100px;
+        scroll-behavior: smooth;
+    }
+        nav .menu-btn i{
+            display: block;
+            font-size: 50px;
+        }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    #click{
+        display: none;
+    }
+    nav{
+        display: flex;
+        height: 90px;
+        width: 100%;
+        background: grey;
+        border-radius: 15px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid black;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left : -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        color: darkseagreen;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+        margin-left: 0px;
+    }
+    nav ul li a.active,nav ul li a:hover{
+        background: none;
+        color: white;
+    }
+    #banner{
+        width: 100%;
+        height: 500px;
+        margin-top: 100px;
+        border: 3px solid black;
+        color: black;
+        display: flex;
+        font-size: 40px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        background-image: url(7.jpg);
+        background-size: cover;
+        background-position: center;    
+        }
+        #team{
+            font-size: 40px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        .section-1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .team1{
+            display: inline-block;
+        }
+        .section-1 .team1 img{
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 40px;
+        }
+        #section-2:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #ab{
+            font-size: 50px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        #left-side{
+            width: 100%;
+            height: 550px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: darkseagreen;
+            text-align: justify;
+        }
+        #right-side{
+            width: 100%;
+            height: 660px;
+        }
+        #project1{
+            width: 100%;
+            height: 210px;
+            background-image: url(p1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 30px;
+            font-weight: normal;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project2{
+            width: 100%;
+            height: 210px;
+            background-image: url(p2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 30px;
+            font-weight: normal;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        #project3{
+            width: 100%;
+            height: 209px;
+            background-image: url(p3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            font-size: 30px;
+            font-weight: normal;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .section-3:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #tech{ margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 35px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .column {
+            background-color: lightgrey;
+            border: 15px solid green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 2.4%;
+            float: left;
+            width: 95%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p{
+            text-align: center;
+        }
+        p a{
+            text-decoration: none; padding: 5px; color: #1c1c1bff;
+            font-size: large; border: solid; border-radius: 10px;
+            background-color: #ffe4e1; border-color: black;
+        }
+        a:hover{
+            background-color: darkseagreen; border: solid;
+            border-color: black; border-radius: 0px; transition: 1s;
+        }
+        .row .column .pics img{
+            width: 98%;
+            height: 150px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+        #cnt{ margin-top: 20px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        #footer{
+            width: 100%;
+            height: 150px;
+            background-color: grey;
+            color: white;
+            border-radius: 15px;
+            border: 2px solid black;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="logo"></div>
+<input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+<li><a class="active" href="practical9.html">HOME</a></li>
+<li><a href="#team">TEAM</a></li>
+<li><a href="#ab">ABOUT</a></li>
+<li><a href="#tech">TECHNOLOGIES</a></li>
+<li><a href="#footer">CONTACT-@</a></li>
+</ul>
+</nav>
+<div id="banner">PRACTICAL -9</div>
+    <div id="team">TEAM-MEMBERS</div>
+    <div class="section-1">
+        <div class="team1"><img src="a1.jpg" alt="">
+        </div>
+        <div class="team1"><img src="a2.jpg" alt="">
+        </div>
+        <div class="team1"><img src="a3.jpg" alt="">
+        </div>
+        <div class="team1"><img src="a4.jpg" alt="">
+        </div>
+    </div>
+    <div id="section-2">
+        <div id="ab">ABOUT-US</div><br>
+        <div id="left-side">
+            <h2 style="text-align: center;">ABOUT PROJECTS:</h2><br>
+            A project is an activity to meet the creation of a unique product or service and thus activities that are undertaken to accomplish routine activities cannot be considered projects. For instance, if your project is less than three months old and has fewer than 20 people working on it, you may not be working in what is called a project according to the definition of the term.<br>
+            It has to be remembered that the term temporary does not apply to the result or service that is generated by the project. The project may be finite but not the result. For instance, a project to build a monument would be of fixed duration whereas the result that is the monument may be for an indefinite period in time.
+        </div>
+        <div id="right-side">
+            <div id="project1">PROJECT-1</div>
+            <div id="project2">PROJECT-2</div>
+            <div id="project3">PROJECT-3</div>
+        </div>
+    </div>
+    <div id="tech">TECHNOLOGIES USED</div>
+    <div class="row">
+        <div class="column">
+            <div class="pics">
+                <img src="h.jpg" alt="">
+            </div>
+            <h4>INTRO TO HTML</h4><br>
+            <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi!</i><br><br>
+            <p><a href="abouthtml.html" target="_blank">READ MORE</a></p><br>
+        </div>
+        <div class="column">
+            <div class="pics">
+                <img src="c.png" alt="">
+            </div>
+            <h4>INTRO TO CSS</h4><br>
+            <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi!</i><br><br>
+            <p><a href="aboutcss.html" target="_blank">READ MORE</a></p><br>
+        </div>
+        <div class="column">
+            <div class="pics">
+                <img src="j.jpg" alt="">
+            </div>
+            <h4>INTRO TO JS</h4><br>
+            <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi!</i><br><br>
+            <p><a href="aboutjs.html" target="_blank">READ MORE</a></p><br>
+        </div>
+        <div class="column">
+            <div class="pics">
+                <img src="b.jpg" alt="">
+            </div>
+            <h4>INTRO TO BOOTSTRAP</h4><br>
+            <i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta magni doloremque suscipit amet voluptas ut eligendi quasi!</i><br><br>
+            <p><a href="aboutbootstrap.html" target="_blank">READ MORE</a></p><br>
+        </div>
+    </div>
+    <div id="cnt">CONTACT-US</div>
+    <div id="footer">MOB-NO:- 9759304175<br>
+        EMAIL-ID:- chirag5april@gmail.com<br>
+        INSTAGRAM:- chirag_in_real_life
+    </div><br>
+</body>
+</html>
+
+
