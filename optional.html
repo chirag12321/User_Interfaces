@@ -42,6 +42,7 @@
         }
         .reg{
             display: flex;
+            margin-top: 20px;
             border-top: 3px solid black;
             border-bottom: 3px solid black;
         }
@@ -87,6 +88,13 @@
         }
         .social a{
             font-size: 50px;
+        }
+        .blink{
+            animation: color 1.5s infinite;
+        }
+        @keyframes color{
+            30%{color: white}
+            70%{color: white}
         }
         #foot{
             color: white;
@@ -150,6 +158,9 @@
             .sign{
                 width: 40%;
             }
+            .reg{
+                margin-top: 10px;
+            }
             .re h3{
                 font-size: 15px;
             }
@@ -198,7 +209,6 @@
         </table>
         </div>
         </div>
-        <br>
         <div class="reg">
         <div class="re">
             <h3>REGISTER FOR FREE</h3></div>
@@ -207,11 +217,11 @@
         </div>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" style="color: #3b5998;"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square" style="color: #00acee;"></i></a>
-            <a href="https://www.google.com/" target="_blank"><i class="fa fa-google-plus-square" style="color: #db3236;"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" style="color: #0e76a8;"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="color: #8a3ab9"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><span style="color: #3b5998;"><span class="blink"><i class="fa fa-facebook-square"></i></span></span></a>
+            <a href="https://www.twitter.com/" target="_blank"><span style="color: #00acee;"><span class="blink"><i class="fa fa-twitter-square"></i></span></span></a>
+            <a href="https://www.google.com/" target="_blank"><span style="color: #db3236;"><span class="blink"><i class="fa fa-google-plus-square"></i></span></span></a>
+            <a href="https://www.linkedin.com/" target="_blank"><span style="color: #0e76a8;"><span class="blink"><i class="fa fa-linkedin-square"></i></span></span></a>
+            <a href="https://www.instagram.com/" target="_blank"><span style="color: #8a3ab9"><span class="blink"><i class="fa fa-instagram"></i></span></span></a>
         </div>
         <div id="foot">&#169; 2020  COPYRIGHT:- @CHIRAG VARSHNEY</div>
         </body>
